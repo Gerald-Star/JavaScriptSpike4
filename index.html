@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functionn, Euality and Strict Operator</title>
+</head>
+<body>
+<h3>Boolean True or false, with If statement condition</h3>
+
+<section>
+
+
+         <span> Setup</span> <br>
+<p>
+function trueOrFalse(wasThatTrue) { <br>
+  // Only change code below this line.
+
+  if (wasThatTrue) { <br>
+    return "Yes, that was true"; <br>
+  }
+  return "No, that was false"; <br>
+
+  // Only change code above this line.br
+}
+
+console.log(trueOrFalse(true));
+
+</p>
+
+<p>
+The function first evaluates if the condition (wasThatTrue)
+ evaluates to true. If it does, ir returns the statement
+  between the curly braces. If it doesn’t, it returns 
+  the next return statement outside them</p>
+</section>
+
+<br> <hr>
+
+<section>
+    <h3>Comparison operators in JavaScript.</h3> 
+    
+    <p> All of these operators return a boolean true or false value.
+    The most basic operator is the <span> equality operator = =.</span> 
+    The equality operator compares two values and returns true 
+    if they're equivalent or false if they are not. </p>
+    
+    Note that equality is different from  <span> assignment (=, =+, =- etc),</span>
+     which assigns the value on the right of the operator 
+     to a variable on the left.
+
+
+<p>In order for JavaScript to compare two 
+different data types (for example, numbers and strings), 
+it must convert one type to another. 
+This is known as Type Coercion. Once it does, however, 
+it can compare terms as follows:</p>
+<br>
+
+1   = =  1  // true <br>
+1   = =  2  // false <br>
+1   = = '1' // true <br>
+"3" = =  3  // true <br>
+
+
+</section>
+
+
+<br>
+<hr>
+<section>
+    <h3>Comparison btw Equality and Strict Equality Operator</h3> 
+Strict equality (===) is the counterpart to
+ the equality operator (==). 
+ However, unlike the equality operator, 
+which attempts to convert both values being compared to
+ a common type, 
+ the strict equality operator does not 
+ perform a type conversion.
+
+If the values being compared have different types, 
+they are considered unequal, and the strict equality 
+operator will return false.
+
+Examples
+
+3 ===  3  // true <br>
+3 === '3' // false <br>
+In the second example, 3 is a Number type 
+and '3' is a String type.
+
+
+
+
+</section>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
